@@ -12,16 +12,15 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family:'Times New Roman', Times, serif;
         font-style:normal;
-        color: white;
       }
       body {
         background-color:powderblue;
       }
       .head {
         margin-top: 1rem;
-        color: rgb(0, 0, 0);
+        /* color: white; */
       }
       .box {
         display: flex;
@@ -33,17 +32,18 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        background-color:black;
+        background-color: rgb(0, 0, 0);
         width: 600px;
         height: 500px;
         box-shadow: 2px 4px 10px rgb(0, 0, 0);
-        border: 1px solid black;
+        border: 1px solid rgb(255, 255, 255);
         border-radius: 20px;
         padding: 20px;
+        color: aliceblue;
       }
       .input {
         padding: 10px 15px;
-        border: 2px solid rgb(255, 255, 255);
+        border: 2px solid rgba(0, 0, 0, 0.4);
         font-size: 18px;
         outline: none;
         border-radius: 10px;
@@ -57,7 +57,7 @@
         margin-top: 10px;
       }
       .btn {
-        background-color: rgb(64, 0, 255);
+        background-color: rgb(66, 55, 231);
         color: white;
         padding: 10px 20px;
         font-size: large;
@@ -70,7 +70,7 @@
       }
 
       .table {
-        border: 2px solid #000000;
+        border: 2px solid black;
         margin: 40px auto;
         border-collapse: collapse;
       }
@@ -79,14 +79,12 @@
       .th {
         padding: 10px;
         text-align: center;
-        color: black;
       }
 
       .subHead {
         text-align: center;
         padding: 0px 35px;
         margin-top: 2rem;
-        color: black;
       }
       .entry {
         padding: 100px 20px;
@@ -94,7 +92,7 @@
     </style>
   </head>
   <body>
-    <h1 align="center" class="head" color="black">WD-101 Reg Form</h1>
+    <h1 align="center" class="head">WD-101 Reg Forms</h1>
     <div class="box">
       <form class="form" id="form">
         <h2 align="center">Registration</h2>
