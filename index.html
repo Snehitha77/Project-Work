@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style:normal;
+        color: white;
+      }
+      body {
+        background-color:powderblue;
+      }
+      .head {
+        margin-top: 1rem;
+        color: rgb(0, 0, 0);
+      }
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+      }
+      .form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color:black;
+        width: 600px;
+        height: 500px;
+        box-shadow: 2px 4px 10px rgb(0, 0, 0);
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 20px;
+      }
+      .input {
+        padding: 10px 15px;
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 18px;
+        outline: none;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+      }
+      label {
+        font-size: 18px;
+        letter-spacing: 1.4px;
+      }
+      .tableForm {
+        margin-top: 10px;
+      }
+      .btn {
+        background-color: rgb(64, 0, 255);
+        color: white;
+        padding: 10px 20px;
+        font-size: large;
+        font-weight: 600;
+        border-radius: 10px;
+      }
+
+      input:invalid:focus {
+        border: 2px solid red;
+      }
+
+      .table {
+        border: 2px solid #000000;
+        margin: 40px auto;
+        border-collapse: collapse;
+      }
+
+      .td,
+      .th {
+        padding: 10px;
+        text-align: center;
+        color: black;
+      }
+
+      .subHead {
+        text-align: center;
+        padding: 0px 35px;
+        margin-top: 2rem;
+        color: black;
+      }
+      .entry {
+        padding: 100px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 align="center" class="head" color="black">WD-101 Reg Form</h1>
+    <div class="box">
+      <form class="form" id="form">
+        <h2 align="center">Registration</h2>
+
+        <table class="tableForm" cellspacing="25px">
+          <tr>
+            <td><label for="name">Name :</label></td>
+            <td>
+              <input
+                class="input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">E-mail :</label></td>
+            <td>
+              <input
+                class="input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="name">Password :</label></td>
+            <td>
+              <input
+                class="input"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date Of Birth :</label></td>
+            <td>
+              <input
+                style="width: 220px"
+                class="input"
+                type="date"
+                name="dob"
+                id="dob"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="checkbox" name="agree" id="agree" />
+              <label for="checkbox">Accept Terms & Conditions</label>
+            </td>
+          </tr>
+        </table>
+        <div>
+          <button class="btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="entry">
+      <h2 class="subHead">Recorded Data</h2>
+      <div id="tableDiv"></div>
+    </div>
+  </body>
+</html>
